@@ -1,5 +1,5 @@
 # react-webpack-starterkit
-Want to have a quick setup that allows you to play with [react](https://reactjs.org/), [webpack](https://webpack.js.org/) or [sass](https://sass-lang.com/)? Enjoy this small starter kit to begin your project. Not so much stuff in just what's needed to make your life easier ...
+Do you want to have a quick setup that allows you to play with [react](https://reactjs.org/), [webpack](https://webpack.js.org/) or [sass](https://sass-lang.com/)? Enjoy this small starter kit to begin your project. Not so much stuff in, just what's needed to make your life easier ...
 
 ## Installation
 Nothing fancy here
@@ -11,7 +11,7 @@ npm start
 ```
 
 ## Plugins
-To work wit react it can be nice to have some plugin installed, here is my personal selection :
+Personal selection of plugins :fire: :
 * [Debugger for Chrome](https://github.com/Microsoft/vscode-chrome-debug)
 * [EditorConfig for VS Code](https://github.com/editorconfig/editorconfig-vscode)
 * [ESLint](https://github.com/Microsoft/vscode-eslint)
@@ -20,21 +20,21 @@ To work wit react it can be nice to have some plugin installed, here is my perso
 * [Import Cost](https://github.com/wix/import-cost)
 
 ## Script
-* `npm start` : Start dev server
-* `npm run start:prod` : Build and serve the build
-* `npm run build` : Build for prod
-* `npm run size:dev` : Size of dev, this one is here just for fun
-* `npm run size:prod` : Size of prod, to spot the big bad guy and check what's going on when yu build
-* `npm run lint` : Manual linting
+* `npm start` > Start dev server
+* `npm run start:prod` > Build and serve the build
+* `npm run build` > Build for prod
+* `npm run size:dev` > Size of dev, this one is here just for fun
+* `npm run size:prod` > Size of prod, to spot the big bad guy and check what's going on when you build
+* `npm run lint` > Manual linting
 
 ## Alias webpack
 ### Webpack
-To make your life easier, webpack [alias](https://webpack.js.org/configuration/resolve/#resolve-alias) is your friend. For an example purpose some alias are setup in the `webpack.common.js`.
+To make your life easier, webpack [alias](https://webpack.js.org/configuration/resolve/#resolve-alias) is your friend. Check `webpack.common.js` to see what's going on and add your own!
 
 ![alt text][alias_webpack]
 
 ### Intellisense
-Webpack Alias are nice but make break intellisense because the path is now a bit different from usually. To counter that issue [`jsconfig.json`](https://code.visualstudio.com/docs/languages/jsconfig) is your friend, and allow you to enjoy all the power of the **auto-completion** and **Go To Definition** :trophy:.
+Webpack alias are cool but what about intellisense ... Indeed alias path may break some feature of your IDE because the path is now a bit different from usually. But guess what, to counter that issue [`jsconfig.json`](https://code.visualstudio.com/docs/languages/jsconfig) is your friend, and allow you to enjoy all the power of the **auto-completion** and **Go To Definition** provided by your IDE :trophy:.
 
 ![alt text][intellisense]
 
@@ -45,8 +45,8 @@ SCSS should work out of the box, the provided webpack configuration allows you t
 ```
 This is made possible thanks to [sass-loader](https://github.com/webpack-contrib/sass-loader) and it's `includePaths` option.
 
-## Snippet
-Because snippet can also be useful, here is how to set up VS Code with the one provided and to let you know where to add your own.
+## Snippets
+Because snippets can also be useful, here is how to set up VS Code with the one provided and to let you know where to add your own.
 
 This section concerned VS Code
 
@@ -66,6 +66,7 @@ Thomas Le Gougaud [@thomas-lg](https://github.com/thomas-lg)
 * file-loader
 * optimize webpack build
 * debugger setup
+* fix non auto reload of dev server when eslint-loader raise error
 
 [alias_webpack]: ./readme/alias_webpack.png
 [snippet]: ./readme/snippet.gif "snippet"
