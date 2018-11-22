@@ -1,0 +1,59 @@
+{
+	"name": "react-webpack-starterkit",
+	"version": "1.0.0",
+	"description": "React Webpack Starterkit",
+	"main": "index.js",
+	"scripts": {
+		"start": "npm run start:dev",
+		"start:dev": "webpack-dev-server --config config/webpack.common.js --env.PLATFORM=dev",
+		"start:prod": "npm run build:local",
+		"prebuild:local": "webpack --config config/webpack.prod.js --env.PLATFORM=prod --progress",
+		"build:local": "node script/server.js",
+		"build": "webpack --config config/webpack.prod.js --env.PLATFORM=prod --progress",
+		"size:dev": "webpack --config config/webpack.common.js --env.PLATFORM=dev --env.STAT=1 --progress",
+		"size:prod": "webpack --config config/webpack.prod.js --env.PLATFORM=prod --env.STAT=1 --progress",
+		"lint": "eslint src/**/*.js src/**/*.jsx",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/thomas-lg/react-webpack-starterkit"
+	},
+	"keywords": [
+		"react",
+		"starterkit",
+		"webpack",
+		"react-router"
+	],
+	"author": "TLG",
+	"license": "ISC",
+	"dependencies": {
+		"react": "^16.6.1",
+		"react-dom": "^16.6.1",
+		"react-router-dom": "^4.3.1"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.1.5",
+		"@babel/preset-env": "^7.1.5",
+		"@babel/preset-react": "^7.0.0",
+		"babel-eslint": "^10.0.1",
+		"babel-loader": "^8.0.4",
+		"clean-webpack-plugin": "^1.0.0",
+		"css-loader": "^1.0.1",
+		"eslint": "^5.9.0",
+		"eslint-loader": "^2.1.1",
+		"eslint-plugin-react": "^7.11.1",
+		"express": "^4.16.4",
+		"html-webpack-plugin": "^3.2.0",
+		"mini-css-extract-plugin": "^0.4.4",
+		"node-sass": "^4.10.0",
+		"optimize-css-assets-webpack-plugin": "^5.0.1",
+		"sass-loader": "^7.1.0",
+		"style-loader": "^0.23.1",
+		"webpack": "^4.25.1",
+		"webpack-bundle-analyzer": "^3.0.3",
+		"webpack-cli": "^3.1.2",
+		"webpack-dev-server": "^3.1.10",
+		"webpack-merge": "^4.1.4"
+	}
+}

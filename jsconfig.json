@@ -1,0 +1,18 @@
+{
+	"compilerOptions": {
+		"target": "esnext",
+		"jsx": "react",
+		"baseUrl": ".",
+		"paths": {
+			"Containers/*": [
+				"./src/app/containers/*"
+			],
+			"Components/*": [
+				"./src/app/components/*"
+			],
+			"Services/*": [
+				"./src/app/services/*"
+			]
+		}
+	}
+}
