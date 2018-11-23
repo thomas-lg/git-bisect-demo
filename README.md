@@ -63,10 +63,9 @@ Thomas Le Gougaud [@thomas-lg](https://github.com/thomas-lg)
 
 ## TODO
 * test management
-* file-loader
+* copy big file instead of passing trought url-loader
 * optimize webpack build
 * debugger setup
-* fix non auto reload of dev server when eslint-loader raise error
 
 [alias_webpack]: ./readme/alias_webpack.png
 [snippet]: ./readme/snippet.gif "snippet"
