@@ -87,7 +87,6 @@ module.exports = env => {
 				STAT ?
 					new BundleAnalyzerPlugin() :
 					(
-						// new HotModuleReplacementPlugin(),
 						new HtmlWebpackPlugin({
 							template: './src/index.html'
 						})
