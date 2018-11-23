@@ -12,6 +12,9 @@
 			],
 			"Services/*": [
 				"./src/app/services/*"
+			],
+			"Assets/*": [
+				"./src/assets/*"
 			]
 		}
 	}

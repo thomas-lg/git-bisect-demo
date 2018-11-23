@@ -1,7 +1,6 @@
 /* eslint-disable */
 
 const path = require('path')
-const HotModuleReplacementPlugin = require('webpack').HotModuleReplacementPlugin
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const merge = require('webpack-merge');
@@ -18,7 +17,8 @@ module.exports = env => {
 			},
 			output: {
 				filename: '[name].bundle.js',
-				path: path.resolve(__dirname, '..', 'dist')
+				path: path.resolve(__dirname, '..', 'dist'),
+				publicPath: '/'
 			},
 			resolve: {
 				extensions: ['.jsx', '.js'],
@@ -26,7 +26,8 @@ module.exports = env => {
 				alias: {
 					Containers: path.resolve(__dirname, '..', 'src', 'app', 'containers'),
 					Components: path.resolve(__dirname, '..', 'src', 'app', 'components'),
-					Services: path.resolve(__dirname, '..', 'src', 'app', 'services')
+					Services: path.resolve(__dirname, '..', 'src', 'app', 'services'),
+					Assets: path.resolve(__dirname, '..', 'src', 'assets')
 				}
 			},
 			devServer: {
@@ -68,6 +69,17 @@ module.exports = env => {
 								}
 							}
 						]
+					},
+					{
+						test: /\.(png|jpg)$/,
+						exclude: /node_modules/,
+						use: {
+							loader: 'url-loader',
+							options: {
+								limit: 1000,
+								name: '[name].[ext]'
+							}
+						}
 					}
 				]
 			},
