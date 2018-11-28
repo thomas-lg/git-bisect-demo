@@ -15,6 +15,9 @@
 			],
 			"Assets/*": [
 				"./src/assets/*"
+			],
+			"Api/*": [
+				"./src/api/*"
 			]
 		}
 	}

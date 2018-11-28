@@ -1,10 +1,11 @@
 import React from 'react';
+import { hot } from 'react-hot-loader'
 import { appService } from 'Services/appService';
 import { Component } from 'Components/Component';
 import { Container } from 'Containers/Container';
 import style from 'Assets/scss/styles.scss'
 
-export class App extends React.Component {
+class App extends React.Component {
 	constructor(props) {
 		super(props);
 		this.data = appService.getData()
@@ -20,3 +21,4 @@ export class App extends React.Component {
 		)
 	}
 }
+export default hot(module)(App)

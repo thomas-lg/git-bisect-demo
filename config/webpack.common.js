@@ -27,14 +27,16 @@ module.exports = env => {
 					Containers: path.resolve(__dirname, '..', 'src', 'app', 'containers'),
 					Components: path.resolve(__dirname, '..', 'src', 'app', 'components'),
 					Services: path.resolve(__dirname, '..', 'src', 'app', 'services'),
-					Assets: path.resolve(__dirname, '..', 'src', 'assets')
+					Assets: path.resolve(__dirname, '..', 'src', 'assets'),
+					Api: path.resolve(__dirname, '..', 'src', 'api')
 				}
 			},
 			devServer: {
 				historyApiFallback: true,
 				contentBase: '.',
 				stats: 'minimal',
-				open: true
+				open: true,
+				hot: true
 			},
 			module: {
 				rules: [
@@ -85,12 +87,10 @@ module.exports = env => {
 			plugins: [
 				STAT ?
 					new BundleAnalyzerPlugin() :
-					(
-						new HtmlWebpackPlugin({
-							template: './src/index.html'
-						})
-					)
+					new HtmlWebpackPlugin({
+						template: './src/index.html'
+					})
 			]
-		}
-	])
+		}]
+	)
 }
