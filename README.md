@@ -66,7 +66,8 @@ Thomas Le Gougaud [@thomas-lg](https://github.com/thomas-lg)
 * copy big file instead of passing trought url-loader
 * optimize webpack build
 * debugger setup
-* update readme with eslint-loader, behaviour of file-loader
+* update readme with eslint-loader, behaviour of file-loader, hot reload, 
+* add npm task to use mock api
 
 [alias_webpack]: ./readme/alias_webpack.png
 [snippet]: ./readme/snippet.gif "snippet"
