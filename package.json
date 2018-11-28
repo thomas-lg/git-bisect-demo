@@ -5,13 +5,13 @@
 	"main": "index.js",
 	"scripts": {
 		"start": "npm run start:dev",
-		"start:dev": "webpack-dev-server --config config/webpack.dev.js --env.PLATFORM=dev",
+		"start:dev": "webpack-dev-server --config config/webpack.dev.js",
 		"start:prod": "npm run build:local",
-		"prebuild:local": "webpack --config config/webpack.prod.js --env.PLATFORM=prod --progress",
+		"prebuild:local": "webpack --config config/webpack.prod.js --progress",
 		"build:local": "node script/server.js",
-		"build": "webpack --config config/webpack.prod.js --env.PLATFORM=prod --progress",
+		"build": "webpack --config config/webpack.prod.js --progress",
 		"size:dev": "webpack --config config/webpack.common.js --env.PLATFORM=dev --env.STAT=1 --progress",
-		"size:prod": "webpack --config config/webpack.prod.js --env.PLATFORM=prod --env.STAT=1 --progress",
+		"size:prod": "webpack --config config/webpack.prod.js --env.STAT=1 --progress",
 		"lint": "eslint src/**/*.js src/**/*.jsx",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},

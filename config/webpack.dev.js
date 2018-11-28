@@ -14,6 +14,7 @@ const devConfig = () => {
 	])
 }
 
-module.exports = env => {
+module.exports = (env = {}) => {
+	env.PLATFORM = 'dev'
 	return merge(commonConfig(env), devConfig());
 }

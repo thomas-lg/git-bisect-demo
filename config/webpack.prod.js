@@ -18,6 +18,7 @@ const prodConfig = () => {
 	])
 }
 
-module.exports = env => {
+module.exports = (env = {}) => {
+	env.PLATFORM = 'prod'
 	return merge(commonConfig(env), prodConfig());
 }
