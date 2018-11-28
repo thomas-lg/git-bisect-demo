@@ -28,7 +28,7 @@ module.exports = env => {
 					Components: path.resolve(__dirname, '..', 'src', 'app', 'components'),
 					Services: path.resolve(__dirname, '..', 'src', 'app', 'services'),
 					Assets: path.resolve(__dirname, '..', 'src', 'assets'),
-					Api: path.resolve(__dirname, '..', 'src', 'api')
+					Api: PLATFORM === 'dev' ?  path.resolve(__dirname, '..', 'src', 'api', 'mock') : path.resolve(__dirname, '..', 'src', 'api')
 				}
 			},
 			devServer: {
