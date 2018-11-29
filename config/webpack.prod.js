@@ -7,15 +7,13 @@ const CleanWebpackPlugin = require('clean-webpack-plugin')
 const commonConfig = require('./webpack.common.js');
 
 const prodConfig = () => {
-	return merge(
-		{
-			plugins: [
-				new CleanWebpackPlugin(['dist']),
-				new MiniCssExtractPlugin(),
-				new OptimizeCssAssetsPlugin()
-			]
-		}
-	)
+	return {
+		plugins: [
+			new CleanWebpackPlugin(['dist']),
+			new MiniCssExtractPlugin(),
+			new OptimizeCssAssetsPlugin()
+		]
+	}
 }
 
 module.exports = (env = {}) => {
