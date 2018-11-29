@@ -64,7 +64,7 @@ module.exports = env => {
 						{
 							loader: 'eslint-loader',
 							options: {
-								emitWarning: PLATFORM === 'dev' ? true : false
+								emitWarning: PLATFORM === 'dev'
 							}
 						}
 					]
