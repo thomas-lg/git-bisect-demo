@@ -8,7 +8,7 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 
 module.exports = env => {
 	const { PLATFORM, STAT } = env;
-	return merge([
+	return merge(
 		{
 			mode: PLATFORM === 'dev' ? 'development' : 'production',
 			devtool: PLATFORM === 'dev' ? 'eval-source-map' : 'source-map',
@@ -91,6 +91,6 @@ module.exports = env => {
 						template: './src/index.html'
 					})
 			]
-		}]
+		}
 	)
 }

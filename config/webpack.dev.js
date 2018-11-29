@@ -5,13 +5,13 @@ const merge = require('webpack-merge');
 const commonConfig = require('./webpack.common.js');
 
 const devConfig = () => {
-	return merge([
+	return merge(
 		{
 			plugins: [
 				new webpack.HotModuleReplacementPlugin()
 			]
 		}
-	])
+	)
 }
 
 module.exports = (env = {}) => {
