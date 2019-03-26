@@ -1,7 +1,8 @@
 {
-	"presets": [
-		"@babel/preset-env",
-		"@babel/preset-react"
-	],
-	"plugins": ["react-hot-loader/babel"]
+	"presets": ["@babel/preset-env", "@babel/preset-react", "@babel/preset-flow"],
+	"plugins": [
+		"@babel/plugin-syntax-dynamic-import",
+		"transform-class-properties",
+		"react-hot-loader/babel"
+	]
 }

@@ -4,21 +4,11 @@
 		"jsx": "react",
 		"baseUrl": ".",
 		"paths": {
-			"Containers/*": [
-				"./src/app/containers/*"
-			],
-			"Components/*": [
-				"./src/app/components/*"
-			],
-			"Services/*": [
-				"./src/app/services/*"
-			],
-			"Assets/*": [
-				"./src/assets/*"
-			],
-			"Api/*": [
-				"./src/api/*"
-			]
+			"components/*": ["./src/app/components/*"],
+			"containers/*": ["./src/app/containers/*"],
+			"models/*": ["./src/app/models/*"],
+			"modules/*": ["./src/app/modules/*"],
+			"assets/*": ["./src/assets/*"]
 		}
 	}
 }

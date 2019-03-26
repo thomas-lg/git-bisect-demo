@@ -2,15 +2,17 @@
 	"parser": "babel-eslint",
 	"extends": [
 		"eslint:recommended",
-		"plugin:react/recommended"
+		"plugin:react/recommended",
+		"plugin:prettier/recommended"
 	],
-	"plugins": [
-		"react"
-	],
+	"plugins": ["react", "flowtype", "flowtype-errors"],
 	"settings": {
 		"react": {
 			"pragma": "React",
-			"version": "16.6.1"
+			"version": "detect"
+		},
+		"flowtype": {
+			"onlyFilesWithFlowAnnotation": true
 		}
 	},
 	"env": {
@@ -21,21 +23,30 @@
 		"jasmine": true
 	},
 	"rules": {
+		"flowtype-errors/show-errors": 2,
 		"brace-style": 2,
 		"constructor-super": 1,
 		"keyword-spacing": 1,
 		"max-depth": [2, 4],
-		"max-len": [1, 100, 4],
+		"max-len": [
+			1,
+			80,
+			2,
+			{
+				"ignorePattern": "^(import\\s.+\\sfrom\\s.+;)|(export const\\s.+)$",
+				"ignoreUrls": true
+			}
+		],
 		"max-statements": [2, 20],
 		"no-debugger": 2,
 		"no-extra-semi": 2,
 		"no-this-before-super": 1,
 		"no-magic-numbers": [
-				2,
-				{
-						"ignoreArrayIndexes": true,
-						"ignore": [-1, 0]
-				}
+			2,
+			{
+				"ignoreArrayIndexes": true,
+				"ignore": [-1, 0]
+			}
 		],
 		"no-var": 2,
 		"no-warning-comments": 2,
@@ -45,37 +56,60 @@
 		"no-unused-expressions": 1,
 		"no-unused-vars": 2,
 		"no-useless-constructor": 2,
+		"no-mixed-spaces-and-tabs": ["warn", "smart-tabs"],
 		"prefer-const": [
-				2,
-				{
-						"destructuring": "all",
-						"ignoreReadBeforeAssign": true
-				}
+			2,
+			{
+				"destructuring": "all",
+				"ignoreReadBeforeAssign": true
+			}
 		],
-		"quotes": [1, "single"],
-		"react/display-name": 1,
+		"react/display-name": 0,
 		"react/no-unescaped-entities": 2,
 		"react/prop-types": 1,
 		"semi": ["off", "always"],
 		"space-before-function-paren": [
-				1,
-				{
-						"anonymous": "always",
-						"named": "never",
-						"asyncArrow": "ignore"
-				}
+			1,
+			{
+				"anonymous": "always",
+				"named": "never",
+				"asyncArrow": "ignore"
+			}
 		],
 		"spaced-comment": [2, "always"],
 		"valid-jsdoc": [
-				1,
-				{
-						"requireParamDescription": false,
-						"requireReturn": false,
-						"requireReturnDescription": false,
-						"requireReturnType": false
-				}
+			1,
+			{
+				"requireParamDescription": false,
+				"requireReturn": false,
+				"requireReturnDescription": false,
+				"requireReturnType": false
+			}
 		],
 		"valid-typeof": 1,
-		"vars-on-top": 2
-},
+		"vars-on-top": 2,
+		"flowtype/boolean-style": [2, "boolean"],
+		"flowtype/define-flow-type": 1,
+		"flowtype/delimiter-dangle": [2, "never"],
+		"flowtype/generic-spacing": [2, "never"],
+		"flowtype/no-primitive-constructor-types": 2,
+		"flowtype/no-types-missing-file-annotation": 2,
+		"flowtype/object-type-delimiter": [2, "comma"],
+		"flowtype/require-parameter-type": 2,
+		"flowtype/require-return-type": [
+			2,
+			"always",
+			{
+				"annotateUndefined": "never"
+			}
+		],
+		"flowtype/require-valid-file-annotation": 2,
+		"flowtype/space-after-type-colon": [2, "always"],
+		"flowtype/space-before-generic-bracket": [2, "never"],
+		"flowtype/space-before-type-colon": [2, "never"],
+		"flowtype/type-id-match": [2, "^([A-Z][a-z0-9]+)+$"],
+		"flowtype/union-intersection-spacing": [2, "always"],
+		"flowtype/use-flow-type": 1,
+		"flowtype/valid-syntax": 1
+	}
 }

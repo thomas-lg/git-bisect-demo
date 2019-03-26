@@ -1,12 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export const Component = ({ data }) => {
-	return (
-		<h1>{data}</h1>
-	)
-}
+export const Component = () => {
+	return <h1>With Redux and Flow</h1>;
+};
 
 Component.propTypes = {
 	data: PropTypes.string
-}
+};

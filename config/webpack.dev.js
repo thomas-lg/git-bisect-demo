@@ -6,13 +6,11 @@ const commonConfig = require('./webpack.common.js');
 
 const devConfig = () => {
 	return {
-		plugins: [
-			new webpack.HotModuleReplacementPlugin()
-		]
-	}
-}
+		plugins: [new webpack.HotModuleReplacementPlugin()]
+	};
+};
 
 module.exports = (env = {}) => {
-	env.PLATFORM = 'dev'
+	env.PLATFORM = 'dev';
 	return merge(commonConfig(env), devConfig());
-}
+};
