@@ -36,12 +36,7 @@
 		"normalizr": "^3.3.0",
 		"react": "^16.8.4",
 		"react-dom": "^16.8.4",
-		"react-redux": "^6.0.1",
-		"react-router-dom": "^4.3.1",
-		"redux-thunk": "^2.3.0",
-		"redux": "^4.0.1",
-		"redux-logger": "^3.0.6",
-		"reselect": "^4.0.0"
+		"react-router-dom": "^4.3.1"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.3.4",
@@ -75,7 +70,6 @@
 		"prettier": "^1.16.4",
 		"react-hot-loader": "^4.8.0",
 		"react-test-renderer": "^16.8.4",
-		"redux-immutable-state-invariant": "^2.1.0",
 		"sass-loader": "^7.1.0",
 		"style-loader": "^0.23.1",
 		"uglifyjs-webpack-plugin": "^2.1.2",
