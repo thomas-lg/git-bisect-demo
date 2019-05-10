@@ -90,6 +90,7 @@ Thomas Le Gougaud [@thomas-lg](https://github.com/thomas-lg)
 - copy big file instead of passing trought url-loader
 - update readme with eslint-loader, behaviour of file-loader, hot reload
 - add doc for prettier/flow/extra-config
+- hook support
 
 [alias_webpack]: ./readme/alias_webpack.png
 [snippet]: ./readme/snippet.gif 'snippet'
