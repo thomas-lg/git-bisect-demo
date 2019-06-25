@@ -5,14 +5,11 @@
 		"plugin:react/recommended",
 		"plugin:prettier/recommended"
 	],
-	"plugins": ["react", "flowtype", "flowtype-errors"],
+	"plugins": ["react"],
 	"settings": {
 		"react": {
 			"pragma": "React",
 			"version": "detect"
-		},
-		"flowtype": {
-			"onlyFilesWithFlowAnnotation": true
 		}
 	},
 	"env": {
@@ -23,7 +20,6 @@
 		"jasmine": true
 	},
 	"rules": {
-		"flowtype-errors/show-errors": 2,
 		"brace-style": 2,
 		"constructor-super": 1,
 		"keyword-spacing": 1,
@@ -87,29 +83,6 @@
 			}
 		],
 		"valid-typeof": 1,
-		"vars-on-top": 2,
-		"flowtype/boolean-style": [2, "boolean"],
-		"flowtype/define-flow-type": 1,
-		"flowtype/delimiter-dangle": [2, "never"],
-		"flowtype/generic-spacing": [2, "never"],
-		"flowtype/no-primitive-constructor-types": 2,
-		"flowtype/no-types-missing-file-annotation": 2,
-		"flowtype/object-type-delimiter": [2, "comma"],
-		"flowtype/require-parameter-type": 2,
-		"flowtype/require-return-type": [
-			2,
-			"always",
-			{
-				"annotateUndefined": "never"
-			}
-		],
-		"flowtype/require-valid-file-annotation": 2,
-		"flowtype/space-after-type-colon": [2, "always"],
-		"flowtype/space-before-generic-bracket": [2, "never"],
-		"flowtype/space-before-type-colon": [2, "never"],
-		"flowtype/type-id-match": [2, "^([A-Z][a-z0-9]+)+$"],
-		"flowtype/union-intersection-spacing": [2, "always"],
-		"flowtype/use-flow-type": 1,
-		"flowtype/valid-syntax": 1
+		"vars-on-top": 2
 	}
 }
