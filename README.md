@@ -1,6 +1,6 @@
 # react-webpack-starterkit
 
-Do you want to have a quick setup that allows you to play with [react](https://reactjs.org/), [webpack](https://webpack.js.org/), [eslint](https://github.com/eslint/eslint) or [sass](https://sass-lang.com/)? Enjoy this small starter kit to begin your project. Not so much stuff in, just what's needed to make your life easier ...
+Do you want to have a quick setup that allows you to play with [react](https://reactjs.org/), [webpack](https://webpack.js.org/), [eslint](https://github.com/eslint/eslint) or [sass](https://sass-lang.com/)? Enjoy this small starter kit to begin your project. Not so much stuff in, just what's needed to make your life easier...
 
 ## Installation
 
@@ -89,7 +89,6 @@ Thomas Le Gougaud [@thomas-lg](https://github.com/thomas-lg)
 - improve test management
 - copy big file instead of passing trought url-loader
 - update readme with eslint-loader, behaviour of file-loader, hot reload
-- hook support
 
 [alias_webpack]: ./readme/alias_webpack.png
 [snippet]: ./readme/snippet.gif 'snippet'
