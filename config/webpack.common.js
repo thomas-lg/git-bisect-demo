@@ -5,7 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const merge = require('webpack-merge');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
 	.BundleAnalyzerPlugin;
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = env => {
@@ -43,7 +43,7 @@ module.exports = env => {
 		},
 		optimization: {
 			minimizer: [
-				new UglifyJsPlugin({
+				new TerserPlugin({
 					cache: true,
 					parallel: true,
 					sourceMap: true

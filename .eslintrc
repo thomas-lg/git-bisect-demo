@@ -20,6 +20,7 @@
 		"jasmine": true
 	},
 	"rules": {
+		"prettier/prettier": 0,
 		"brace-style": 2,
 		"constructor-super": 1,
 		"keyword-spacing": 1,
