@@ -1,6 +1,6 @@
 import React from 'react';
-import Typography from '@material-ui/core/Typography';
+import bisect_cmd from '../../../assets/images/bisect_cmd.png';
 
 export const What = () => {
-	return <Typography variant='h1'>What</Typography>;
+	return <img src={bisect_cmd} alt='' />;
 };
