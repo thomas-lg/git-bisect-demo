@@ -14,23 +14,11 @@ const useStyles = makeStyles(theme => ({
 		justifyContent: 'space-between',
 		backgroundColor: theme.palette.background.paper
 	},
-	listItemTextLeft: {
-		fontSize: '5em',
-		color: '#4CAF50',
-		display: 'flex',
-		justifyContent: 'flex-start'
-	},
 	listItemTextCenter: {
 		fontSize: '5em',
 		color: '#4CAF50',
 		display: 'flex',
 		justifyContent: 'center'
-	},
-	listItemTextRight: {
-		fontSize: '5em',
-		color: '#4CAF50',
-		display: 'flex',
-		justifyContent: 'flex-end'
 	}
 }));
 
@@ -41,7 +29,7 @@ export const Why = () => {
 		<List className={classes.root} component='nav'>
 			<ListItem>
 				<ListItemText
-					classes={{ primary: classes.listItemTextLeft }}
+					classes={{ primary: classes.listItemTextCenter }}
 					primary='Fighting regressions'
 				/>
 			</ListItem>
@@ -56,7 +44,7 @@ export const Why = () => {
 			<Divider />
 			<ListItem>
 				<ListItemText
-					classes={{ primary: classes.listItemTextRight }}
+					classes={{ primary: classes.listItemTextCenter }}
 					component='nav'
 					primary='Fast process'
 				/>

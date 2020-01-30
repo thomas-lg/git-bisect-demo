@@ -3,8 +3,9 @@ body,
 	display: flex;
 	flex-direction: column;
 	flex: 1;
+	font-family: roboto;
 }
 @font-face {
-	font-family: rock;
-	src: url(../fonts/rock_font.ttf);
+	font-family: roboto;
+	src: url(../fonts/Roboto-Regular.ttf);
 }
