@@ -14,3 +14,9 @@ cd git-bisect-demo
 npm i
 npm start
 ```
+
+## Do it
+
+Now that you got the project running, you'll see that the last slide seems to be buggy and that's alright. Your mission is to find the guilty commit :smile:.
+
+To do it we're gonna use `git bisect`. It's a very simple and usefull tool that allow you to spot the commit that introduce a bug in your codebase.
