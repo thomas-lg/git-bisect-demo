@@ -1,9 +1,6 @@
 import React from 'react';
+import { Wizard } from './Container/Wizard/Wizard';
 
 export const App = () => {
-	return (
-		<div>
-			<h1>git-bisect-demo</h1>
-		</div>
-	);
+	return <Wizard />;
 };
