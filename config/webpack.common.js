@@ -136,7 +136,7 @@ module.exports = env => {
 					]
 				},
 				{
-					test: /\.(png|jpg)$/,
+					test: /\.(png|jpg|gif)$/,
 					exclude: /node_modules/,
 					use: {
 						loader: 'url-loader',
@@ -145,6 +145,10 @@ module.exports = env => {
 							name: '[name].[ext]'
 						}
 					}
+				},
+				{
+					test: /\.(ttf)$/,
+					loader: 'url-loader?limit=100000'
 				}
 			]
 		},

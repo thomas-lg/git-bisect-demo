@@ -1,5 +1,6 @@
 import React from 'react';
+import gif from '../../../assets/images/ok.gif';
 
 export const Demo = () => {
-	return <h1>Demo</h1>;
+	return <img style={{ width: '750px' }} src={gif} alt='' />;
 };

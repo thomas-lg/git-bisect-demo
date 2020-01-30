@@ -1,5 +1,6 @@
 import React from 'react';
+import Typography from '@material-ui/core/Typography';
 
 export const What = () => {
-	return <h1>What</h1>;
+	return <Typography variant='h1'>What</Typography>;
 };

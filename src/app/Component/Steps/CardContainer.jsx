@@ -16,7 +16,7 @@ const useStyles = makeStyles({
 		display: 'flex',
 		flexDirection: 'column',
 		alignItems: 'center',
-		justifyContent: 'space-between'
+		justifyContent: 'center'
 	}
 });
 
