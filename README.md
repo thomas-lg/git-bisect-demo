@@ -41,10 +41,10 @@ In this demo case we're only gonna use a few of them.
 
 Make sure that you are on the last commit of the project and then begin the show!
 
-1. `npm start` To run the project then go throught the slides and reach the last one. Then begin the `git bisect` operation, changes on this last side should change automatically when you're doing your git bisect
+1. `npm start` To run the project then go throught the slides and reach the last one.
 2. `git bisect start` You'll noticed that a `(master|BISECTING)` appeared next to your command line. If it's not obvious enough that just mean that you enter the bisect mode of git.
 3. `git bisect bad` Because you know that the current commit has the bug.
-4. `git bisect good v1.0` Because you know that v1.0 has **NO** bug. It should display the estimated steps required to find the faulty commit, in my case it's roughly 3 steps.
+4. `git bisect good v1.0` Because you know that v1.0 has **NO** bug. It should display the estimated steps required to find the faulty commit, in my case it's roughly 3 steps. This command line should also fetch a new commit for you to check.
 5. Now your work is simply to say if yes or no the current commit is faulty here is the result in my case 1.
 
 ## Author
