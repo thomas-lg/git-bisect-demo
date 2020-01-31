@@ -27,11 +27,11 @@ You must be the guy doing the demo or just training so here is some spoils for y
 
 ![alt text][branch]
 
-See that red arrow? That's the commit that introduce the bug so now question is how to use git bisect to spot it ez and pz.
+See that red arrow? That's the commit that introduce the bug so now question is how to use `git bisect` to spot it ez and pz.
 
 I do know that the the v1.0 was working perfectly (You can check by yourself 😉). That means that the issue was introduced between the v1.0 commit tag and my current version. Hopefully `git bisect` is our ally!
 
-Check the help command of `git bisect` by yourself, it's pretty easy to get what each command is doing.
+Check the help command of `git bisect` by yourself, it's pretty easy to understand what each command is doing.
 
 In this demo case we're only gonna use a few of them.
 
@@ -40,14 +40,15 @@ In this demo case we're only gonna use a few of them.
 Make sure that you are on the last commit of the project and then begin the show!
 
 1. `npm start` To run the project then go throught the slides and reach the last one if you're not already on it.
-2. Open a new terminal and `git bisect start` You'll noticed that a `(master|BISECTING)` appeared next to your command line. If it's not obvious enough that just mean that you enter the bisect mode of git.
+2. Open a new terminal and `git bisect start` You'll noticed that a `(master|BISECTING)` appeared next to your command line. If it's not obvious enough that just mean that you enter the bisect mode of git 😜.
 3. `git bisect bad` Because you know that the current commit has the bug.
-4. `git bisect good v1.0` Because you know that v1.0 has **NO** bug. It should display the estimated steps required to find the faulty commit, in my case it's roughly 3 steps. This command line should also fetch a new commit for you to check.
+4. `git bisect good v1.0` Because you know that v1.0 has **NO** bug. It should display the estimated steps required to find the faulty commit, in my case it's roughly 4 steps. This command line should also fetch a new commit.
 5. If you stayed on the last slide you'll see than it must have been updated. Now your work is simply to say if yes or no the current commit is buggy.
-   1. If this new gif does not seem alright just `git bisect bad`
+   1. If this new gif does not seem alright just `git bisect bad`.
    2. If it's fine `git bisect good`.
+   3. Redo untill you find the bad boy.
 6. Finally you should find the `lookingforme!` commit that started everything.
-7. You can now `git bisect reset` to go back to `HEAD`
+7. You can now `git bisect reset` to go back to `HEAD`.
 
 What to do know? Just check the files that have been updated in the `lookingforme!` commit and you should find what's wrong! Not that useful in this demo but real life might be different 😋
 
