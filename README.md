@@ -44,8 +44,8 @@ Make sure that you are on the last commit of the project and then begin the show
 3. `git bisect bad` Because you know that the current commit has the bug.
 4. `git bisect good v1.0` Because you know that v1.0 has **NO** bug. It should display the estimated steps required to find the faulty commit, in my case it's roughly 4 steps. This command line should also fetch a new commit.
 5. If you stayed on the last slide you'll see than it must have been updated. Now your work is simply to say if yes or no the current commit is buggy.
-   1. If this new gif does not seem alright just `git bisect bad`.
-   2. If it's fine `git bisect good`.
+   1. If this new gif does not seem alright just `git bisect bad` (meaning if it's the car, umbrella or desk).
+   2. If it's fine then `git bisect good` (meaning if it's a minions).
    3. Redo untill you find the bad boy.
 6. Finally you should find the `lookingforme!` commit that started everything.
 7. You can now `git bisect reset` to go back to `HEAD`.
