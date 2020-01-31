@@ -1,7 +1,7 @@
 {
-	"name": "react-webpack-starterkit",
+	"name": "git-bisect-demo",
 	"version": "1.0.0",
-	"description": "React Webpack Starterkit",
+	"description": "Wanna play with git bisect or show your mates that splendid tool? This quick project will let you exercice easily and quickly",
 	"main": "index.js",
 	"scripts": {
 		"start": "npm run start:local",
@@ -18,7 +18,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/thomas-lg/react-webpack-starterkit"
+		"url": "https://github.com/thomas-lg/git-bisect-demo"
 	},
 	"keywords": [
 		"react",

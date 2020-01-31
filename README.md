@@ -2,15 +2,13 @@
 
 If you want to demonstrate quickly what git bisect is to your team, feel free to use/modify and do whatever you want with this project.
 
-Have a look at my starterkit if you like React/Webpack/etc.. [starterkit](https://github.com/thomas-lg/react-webpack-starterkit.git) while you're here :innocent:. I used it for this project.
+## Dive into it
 
-## But wait ...
+What is `git bisect`? To make it short, quick story!
 
-What is `git bisect`?
+You found a bug just before a release but got no idea where this bug come from. There are 500 commits to check and you are beginning to lose your mind ...
 
-To make it short, quick story! You found a bug just before a release but got no idea where this bug come from. There are 500 commits to check and you are beginning to lose your mind ...
-
-`git bisect` will allow you to find the commit that cause the issue by checking maximum 10 commits. The process is automatic, fast, secure and best of all it **works**.
+Guess what ... `git bisect` will allow you to find the commit that cause the issue by checking maximum 10 commits. The process is automatic, fast, secure and best of all it **works**.
 
 ## Get it
 
@@ -75,6 +73,8 @@ What to do now? Just check the files that have been updated in the `lookingforme
 ## What's more
 
 [git bisect](https://git-scm.com/docs/git-bisect) doc is pretty nice, you should definitely check some others subcommand. Nicest one must be `git bisect run <cmd>` that will allow you to use a script instead of manually saying if a specific commit is **good** or **bad**
+
+Ad for myself: Have a look at my [starterkit](https://github.com/thomas-lg/react-webpack-starterkit.git) if you like React/Webpack/etc. I used it for this project 😅.
 
 ## Author
 
