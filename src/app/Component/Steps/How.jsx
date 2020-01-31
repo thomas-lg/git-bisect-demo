@@ -1,6 +1,4 @@
 import React from 'react';
-import Typography from '@material-ui/core/Typography';
+import how_pic from '../../../assets/images/how.png';
 
-export const How = () => {
-	return <Typography variant='h1'>How</Typography>;
-};
+export const How = () => <img style={{ width: '100%' }} src={how_pic} alt='' />;
