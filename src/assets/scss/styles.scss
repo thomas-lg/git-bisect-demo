@@ -4,7 +4,9 @@ body,
 	flex-direction: column;
 	flex: 1;
 	font-family: roboto;
+	overflow: hidden;
 }
+
 @font-face {
 	font-family: roboto;
 	src: url(../fonts/Roboto-Regular.ttf);
