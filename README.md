@@ -27,7 +27,7 @@ You must be the guy doing the demo so here is some spoils for you.
 
 ![alt text][branch]
 
-See that looking for me? That's the commit that introduce the bug so now question is how to use git bisect to spot it ez and pz.
+See that red arrow? That's the commit that introduce the bug so now question is how to use git bisect to spot it ez and pz.
 
 I do know that the the v1.0 was working perfectly (You can check by yourself 😉). That means that the issue was introduced between the v1.0 commit tag and my current version.
 
@@ -35,8 +35,17 @@ The help command is pretty usefull to understand how it works.
 
 ![alt text][git_command]
 
-Here we only have to use a few of them.
+In this demo case we're only gonna use a few of them.
 
+## Step by step
+
+Make sure that you are on the last commit of the project and then begin the show!
+
+1. `npm start` To run the project then go throught the slides and reach the last one. Then begin the `git bisect` operation, changes on this last side should change automatically when you're doing your git bisect
+2. `git bisect start` You'll noticed that a `(master|BISECTING)` appeared next to your command line. If it's not obvious enough that just mean that you enter the bisect mode of git.
+3. `git bisect bad` Because you know that the current commit has the bug.
+4. `git bisect good v1.0` Because you know that v1.0 has **NO** bug. It should display the estimated steps required to find the faulty commit, in my case it's roughly 3 steps.
+5. Now your work is simply to say if yes or no the current commit is faulty here is the result in my case 1.
 
 ## Author
 
