@@ -75,6 +75,12 @@ Ad for myself: Have a look at my [starterkit](https://github.com/thomas-lg/react
 
 Thomas Le Gougaud [@thomas-lg](https://github.com/thomas-lg)
 
+## Todo
+
+- make prod bundle work
+- make slide prettier
+- testing
+
 [branch]: ./readme/vert_bisect.png
 [git_command]: ./readme/bisect_cmd.png
 [bisect_begin]: ./readme/bisect_begin.png
