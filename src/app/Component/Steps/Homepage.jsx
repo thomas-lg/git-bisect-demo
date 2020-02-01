@@ -30,7 +30,7 @@ export const Homepage = () => {
 	return (
 		<div className={classes.container + ' ' + classes.center}>
 			<Typography style={{ color: '#4CAF50' }} variant='h1'>
-				Demo project for git-bisect
+				git-bisect
 			</Typography>
 			<Typography variant='h3' component='h3'>
 				<a href='https://github.com/thomas-lg/git-bisect-demo'>
