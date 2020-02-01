@@ -29,7 +29,7 @@ To do it we're going to use `git bisect`. It's a very simple and useful tool tha
 
 ## How to
 
-You must be the guy doing the demo or just training so here is some spoils for you.
+You must be the person doing the demo or just training so here is some spoils for you.
 
 ![alt text][branch]
 
