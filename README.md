@@ -1,6 +1,6 @@
 # git-bisect-demo
 
-If you want to demonstrate quickly what git bisect is to your team, feel free to use/modify and do whatever you want with this project. Slide are a bit raw, this project was also a pretext to play with react ;).
+If you want to demonstrate quickly what git bisect is to your team, feel free to use/modify and do whatever you want with this project. Slides are a bit raw, this project was also a pretext to play with react ;).
 
 ## Dive into it
 
