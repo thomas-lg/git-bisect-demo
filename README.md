@@ -73,7 +73,7 @@ Ad for myself: Have a look at my [starterkit](https://github.com/thomas-lg/react
 
 ## Author
 
-Thomas Le Gougaud [@thomas-lg](https://github.com/thomas-lg)
+[@thomas-lg](https://github.com/thomas-lg)
 
 ## Todo
 
